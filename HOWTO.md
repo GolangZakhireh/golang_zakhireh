@@ -1,6 +1,7 @@
 # How to Use GolangZakhireh
 
-GolangZakhireh is a local Go module proxy that caches packages for offline use and faster builds. This guide will walk you through setting it up and using it in your development workflow.
+GolangZakhireh is a lightweight, local Go module proxy that caches packages for offline use and faster builds. 
+It's designed for extreme simplicity and hackability, providing a more transparent and easy-to-customize alternative to larger proxy solutions. This guide will walk you through setting it up and using it in your development workflow.
 
 ---
 

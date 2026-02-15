@@ -98,6 +98,16 @@ To remove all cached data and logs:
 
 ---
 
+## [.] Alternatives & Motivation
+
+While mature solutions like [GoMods.io](https://docs.gomods.io/) and [Athens](https://github.com/gomods/athens) exist and are excellent for many use cases, GolangZakhireh was built with a different philosophy in mind:
+
+*   **Extreme Simplicity**: A single-binary solution that just works without complex setup or heavy dependencies.
+*   **Lightweight & Minimal**: Designed to run efficiently even on low-resource machines in air-gapped environments.
+*   **Hackability**: A clean, modular codebase using standard Go patterns, making it remarkably easy for anyone to read, edit, and tailor to their specific infrastructure needs.
+
+---
+
 ## [.] License
 
 MIT
