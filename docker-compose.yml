@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  golangzakhireh:
+    build: .
+    image: golangzakhireh:latest
+    container_name: golangzakhireh
+    restart: unless-stopped
+    ports:
+      # Expose port 8811 for proxy and dashboard access
+      - "8811:8811"
+    volumes:
+      # Persist downloaded modules to the host ./data/modules directory
+      - ./data/modules:/data/modules
+    environment:
+      # Configure GolangZakhireh settings
+      - GOLANGZAKHIREH_PORT=:8811
+      - GOLANGZAKHIREH_DATA_DIR=/data/modules
+      # Upstream proxy to fetch modules from (default: proxy.golang.org)
+      - GOLANGZAKHIREH_UPSTREAM=https://proxy.golang.org
+      # - GONOSUMDB=*.corp.example.com
+      # - GOLANGZAKHIREH_ALLOW=github.com/my-org/*,github.com/public/*
